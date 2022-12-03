@@ -30,7 +30,7 @@ let songs = [
     songName: "Hanuman Chalisa",
     filePath: "song/aud3.mp3",
     coverPath: "covers/cover3.png",
-    length: "12:97"
+    length: "12:37"
   },
   {
     songName: "Instrumental Medley",
@@ -55,7 +55,7 @@ let songs = [
     songName: "Saudagar sauda karr",
     filePath: "song/aud7.mp3",
     coverPath: "covers/cover7.png",
-    length: "07:97"
+    length: "07:49"
   },
 ];
 
@@ -72,6 +72,7 @@ const makeallbtnsplay = () => {
 };
 function timestamp( time ){
   let x = time % 60;
+  //console.log(x);
   let y = Math.trunc(time/60);
   return ("0" + y).slice(-2)+':'+ ("0" + x).slice(-2) ;
 
