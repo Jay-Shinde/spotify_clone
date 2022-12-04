@@ -1,19 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300&display=swap');
-body{
-    
-    background: rgb(0,0,0);
-background: linear-gradient(283deg, rgba(0,0,0,1) 0%, rgba(74,186,186,1) 50%, rgba(0,29,21,1) 100%);
+
+body {
+
+    background: rgb(0, 0, 0);
+    background: linear-gradient(283deg, rgba(0, 0, 0, 1) 0%, rgba(74, 186, 186, 1) 50%, rgba(0, 29, 21, 1) 100%);
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-nav{
-    font-family:'Ubuntu', sans-serif;
-    
+
+nav {
+    font-family: 'Ubuntu', sans-serif;
+
 }
-nav ul{
+
+nav ul {
     display: flex;
     list-style-type: none;
     height: 60px;
@@ -21,25 +25,29 @@ nav ul{
     color: white;
     align-items: center;
 }
-nav ul li{
-    padding:0 12px;
+
+nav ul li {
+    padding: 0 12px;
 }
-.brand img{
+
+.brand img {
     width: 44px;
     margin-right: 5px;
 }
-.brand{
+
+.brand {
     display: flex;
-    align-items:center;
+    align-items: center;
     font-weight: bolder;
     font-size: 1.3rem;
 }
-.container{
+
+.container {
     min-height: 69vh;
     background-color: black;
     color: white;
     font-family: 'Varela Round', sans-serif;
-    font-size:small;
+    font-size: small;
     display: flex;
     width: 70%;
     margin: 10px auto;
@@ -48,11 +56,11 @@ nav ul li{
     background-image: url('2.png');
     background-size: cover;
 
-    
+
 
 }
 
-.bottom{
+.bottom {
     position: sticky;
     height: 88px;
     background-color: black;
@@ -64,23 +72,26 @@ nav ul li{
     flex-direction: column;
 
 }
-.icons{
+
+.icons {
     margin-top: 10px;
 }
-.icons i{
+
+.icons i {
     cursor: pointer;
 }
 
-#myProgressbar{
+#myProgressbar {
     width: 80vw;
     cursor: pointer;
 }
 
-.songitemcontainer{
-margin-top: 30px;
+.songitemcontainer {
+    margin-top: 30px;
 
 }
-.songitem{
+
+.songitem {
     height: 50px;
     width: 80%;
     display: flex;
@@ -88,46 +99,58 @@ margin-top: 30px;
     justify-content: space-between;
     background-color: antiquewhite;
     color: black;
-    
+
     padding: 0 10px;
     border-radius: 10px;
     margin-bottom: 10px;
-    
+
 
 }
-.songitem img{
+
+.songitem img {
     height: 40px;
     width: 40px;
     border-radius: 30px;
 }
- 
-.songitem span i{
+
+.songitem span i {
     margin: 0 5px;
     cursor: pointer;
 }
 
-.songitem .songlistplay{
+.songitem .songlistplay {
 
     display: flex;
     align-items: center;
 
 }
 
-.songinfo{
+.songinfo {
     position: absolute;
     left: 9.5vw;
 }
 
-.songinfoitems{
+.songinfoitems {
     display: flex;
     align-items: center;
 }
-.songinfo p{
+
+.songinfo p {
     margin-left: 8px;
     font-family: 'Varela Round', sans-serif;
 }
-.songinfoitems img{
+
+.songinfoitems img {
     opacity: 0;
     transition: opacity 0.3s ease-in;
 }
 
+@media only screen and (max-width: 800px) {
+
+    .songinfo{
+         position: static;
+         display: flex;
+         padding-right: 50px;
+         
+    }
+}
