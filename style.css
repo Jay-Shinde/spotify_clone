@@ -81,6 +81,7 @@ nav ul li {
 .icons i {
     cursor: pointer;
     margin: 5px;
+    bottom: 1rem;
 }
 
 #myProgressbar {
@@ -130,6 +131,7 @@ nav ul li {
 .songinfo {
     position: absolute;
     left: 9.5vw;
+    bottom: 2rem;
 }
 
 .songinfoitems {
@@ -149,10 +151,17 @@ nav ul li {
 
 @media only screen and (max-width: 800px) {
 
-    .songinfo{
-         position: static;
-         display: flex;
-         padding-right: 50px;
-         
+   .contain{
+        height: auto;
+        display: flex;
+
     }
+    
+.songinfo{
+    text-align: center;
+}
+.icons{
+    text-align: center;
+    right: 60%;
+}
 }
